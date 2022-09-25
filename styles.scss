@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(Norse-Bold.otf);
+}
+
+.container-fluid {
+    display: flex;
+    gap: 150px;
+}
+
+.whole {
+    background-color: black;
+}
+
+.left {
+    background-image: url('https://pngimg.com/uploads/spider_man/spider_man_PNG9.png');
+    background-repeat: no-repeat;
+    background-size: 400px auto;
+    background-color: black;
+    background-position-x: 30px;
+    background-position: 35% 60%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: black;
+    width: 40vw;
+    height: 100vh;
+
+    .greeting {
+        color: white;
+        font-size: 20px;
+        position: relative;
+        left: 160px;
+        bottom: 80px;
+    }
+
+    .lonely {
+        max-width: 600px;
+        margin-top: 140px;
+       margin-right: -140px;
+        font-size: 42px;
+        font-family: Norse, Arial, Helvetica, sans-serif;
+        color: white;
+        text-shadow: 1px 3px red;
+    }
+    .lonely2 {
+        max-width: 100px;
+        position: relative;
+        bottom: 120px;
+        right: 110px;
+    }
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 700;
+    margin-top: 110px;
+    width: 60vw;
+    height: 100vh;
+
+    .header {
+        color: white;
+       // text-shadow: 1px 3px red;
+        max-width: 600px;
+        font-size: 18px;
+    }
+
+    .two {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .form-one {
+       display: flex;
+        gap: 5px;
+        margin-bottom: 5px;
+        align-content: center;
+        justify-content: space-around;
+    }
+    .form-two {
+      @extend .form-one
+    }
+    .form-three {
+      @extend .form-one
+    }
+
+    .btn {
+        margin-top: 15px;
+        margin-left: -13px;
+        border: 2px blue solid;
+    }
+
+    .footer {
+        margin-top: 12px;
+        color: white;
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+    }
+
+    .card {
+        color: black;
+        padding: 15px;
+        display: flex;
+       justify-content: center;
+       // text-shadow: 1px 1px 2px red;
+        border: 2px solid blue;
+        //background-image: url(https://thumbs.dreamstime.com/b/spider-web-cobweb-halloween-net-background-vector-illustration-spider-web-cobweb-halloween-net-background-vector-194887959.jpg);
+       // background-repeat: no-repeat;
+        //background-size: cover;
+        .holder {
+            .form-label {
+                display: flex;
+                align-items: center;
+                min-width: 100px;
+                margin-right: -15px;
+
+            }
+           input{
+                max-width: 300px;
+                max-height: 50px;
+                &:hover {
+                    cursor: pointer;
+                }
+                &:focus {
+                  cursor: text;
+               
+                }
+            
+            }
+           
+        }
+    }
+
+
+
+}
+
+
+

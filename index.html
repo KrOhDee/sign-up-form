@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+   
+</head>
+<body>
+ <div class="container-fluid whole">
+     <div class="left">
+         <span>
+        <p class="lonely">The Spider-Man Newsletter</p>
+        <img class="lonely2"src="https://www.pngmart.com/files/10/Spider-Man-Logo-PNG-Photos.png">
+        <p class="greeting"></p>
+        </span>
+     </div>
+
+     <div class="right">
+        <p class="header">Do you want to receive personalized cool emails from Spider-Man? Of course you do! Just fill out the boxes below with the requested info to hear from your friendly neighborhood Spider-Man starting today!</p>
+        <p class="header two">What are you waiting for, Spidey can't wait to tell you all about his adventures!</p>
+        <div class="card">
+            <p>Fill out the form below to subscribe to The Spider-Man Newsletter!</p>
+            <div class="container holder">
+                <form novalidate oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+                <div class="form-one">
+                 <label for="first-name" class="form-label">First Name</label>  
+                 <input type="text" id="first-name" class="form-control" required placeholder="Peter">
+                 
+                    
+                 <label for="last-name" class="form-label">Last Name</label>
+                 <input type="text" id="last-name" class="form-control" required placeholder="Parker">
+                 
+                    
+                </div>
+                <div class="form-two">
+                 <label for="phone-number" class="form-label">Phone Number</label>     
+                 <input type="tel" id="phone-number" class="form-control" required placeholder="012-345-6789">
+                 
+                    
+                 <label for="email" class="form-label lower">Email</label>     
+                 <input type="email" id="email" class="form-control" required placeholder="spidey@example.com">
+                 
+                    
+                </div>
+                <div class="form-three">
+                 <label for="password" class="form-label lower">Password</label>  
+                 <input type="password" id="password" class="form-control" name="up" required>
+                 
+                 <label for="password-confirm" class="form-label">Confirm Password</label>  
+                 <input type="text" id="password-confirm" class="form-control" name="up2" required>
+                 <div id="message">
+
+                 </div>
+                 
+                    
+                </div>
+               
+            </div>
+            
+        </div>
+        <div class="container">
+            <button class="btn btn-danger">Create Account</button>
+        </div>
+        <div class="footer">
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+        </form>
+     </div>
+ </div>
+    
+</body>
+</html>
